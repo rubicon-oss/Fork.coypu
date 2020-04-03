@@ -34,6 +34,6 @@ Copyright © 2018 Adrian Longley and Contributors</Copyright>
     <DocumentationFile>bin\Debug\Coypu.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Selenium.WebDriver" Version="[3.141.0,4)" />
+    <PackageReference Include="Selenium.WebDriver" Version="[3.141.0,5)" />
   </ItemGroup>
 </Project>
