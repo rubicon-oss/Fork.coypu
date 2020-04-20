@@ -5,10 +5,11 @@
     <BuildPackage>true</BuildPackage>
     <AssemblyTitle>Coypu</AssemblyTitle>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <FileVersion>3.1.1.0</FileVersion>
-    <PackageId>Coypu</PackageId>
-    <Version>3.1.1</Version>
-    <Description>Intuitive, robust browser automation for the .NET platform.
+    <FileVersion>3.1.1.1</FileVersion>
+    <PackageId>Fork.Coypu</PackageId>
+    <Version>3.1.1.1</Version>
+    <Description>An adaption of Coypu for use in the re-motion framework.
+Intuitive, robust browser automation for the .NET platform.
 This package includes the Coypu 3 framework assembly, which should be referenced by your tests.
 
 Supported platforms:
@@ -16,14 +17,15 @@ Supported platforms:
 - .NET Standard 2.0+
 - .NET Core 2.0+</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/featurist/coypu/</PackageProjectUrl>
-    <Copyright>Copyright © 2018 Adrian Longley and Contributors</Copyright>
+    <PackageProjectUrl>https://github.com/rubicon-oss/Fork.coypu</PackageProjectUrl>
+    <Copyright>Copyright © rubicon IT GmbH, www.rubicon.eu
+Copyright © 2018 Adrian Longley and Contributors</Copyright>
     <PackageTags>browser, automation, selenium, testing, framework</PackageTags>
     <LangVersion>7.3</LangVersion>
-    <Authors>Adrian Longley, Jakub Obstarczyk</Authors>
-    <RepositoryUrl>https://github.com/featurist/coypu</RepositoryUrl>
+    <Authors>rubicon IT GmbH, Adrian Longley, Jakub Obstarczyk</Authors>
+    <RepositoryUrl>https://github.com/rubicon-oss/Fork.coypu</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Company>Coypu</Company>
+    <Company>rubicon IT GmbH, www.rubicon.eu</Company>
     <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
