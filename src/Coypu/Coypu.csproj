@@ -5,10 +5,10 @@
     <BuildPackage>true</BuildPackage>
     <AssemblyTitle>Fork.Coypu</AssemblyTitle>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <FileVersion>3.1.1.1</FileVersion>
+    <FileVersion>3.1.1.2</FileVersion>
     <Product>Fork.Coypu</Product>
     <PackageId>Fork.Coypu</PackageId>
-    <Version>3.1.1.1</Version>
+    <Version>3.1.1.2</Version>
     <Description>An adaption of Coypu for use in the re-motion framework.
 Intuitive, robust browser automation for the .NET platform.
 This package includes the Coypu 3 framework assembly, which should be referenced by your tests.
