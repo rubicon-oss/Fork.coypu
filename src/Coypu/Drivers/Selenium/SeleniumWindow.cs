@@ -50,7 +50,7 @@ namespace Coypu.Drivers.Selenium
             }
         }
 
-        public object NativeWindowWithoutEnsuringDefaultContent ()
+        public object NativeWindowWithoutEnsuringDefaultContent()
         {
             _seleniumWindowManager.SwitchToWindowWithoutEnsuringDefaultContent(_windowHandle);
             return _webDriver;
