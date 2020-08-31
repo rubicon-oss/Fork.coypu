@@ -73,5 +73,17 @@ namespace Coypu.Drivers.Selenium
             _switchedToFrame = null;
             _switchedToFrameElement = null;
         }
+
+        public void SwitchToWindowWithoutEnsuringDefaultContent(string windowName)
+        {
+            if (LastKnownWindowHandle != windowName || SwitchedToAFrame)
+            {
+                _webDriver.SwitchTo().Window(windowName);
+                LastKnownWindowHandle = windowName;
+            }
+
+            _switchedToFrame = null;
+            _switchedToFrameElement = null;
+        }
     }
 }

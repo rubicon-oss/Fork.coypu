@@ -30,6 +30,18 @@ namespace Coypu.Drivers.Selenium
                                          .Native;
         }
 
+        public ISearchContext SeleniumScopeWithoutEnsuringDefaultContent(Scope scope)
+        {
+            var element = scope.Now();
+
+            if (element is SeleniumWindow windowElement)
+            {
+                return (ISearchContext) windowElement.NativeWindowWithoutEnsuringDefaultContent();
+            }
+
+            return (ISearchContext) element.Native;
+        }
+
         private static bool Matches(Func<IWebElement, bool> predicate,
                                     IWebElement element)
         {
