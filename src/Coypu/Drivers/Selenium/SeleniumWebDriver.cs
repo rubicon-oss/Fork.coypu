@@ -203,16 +203,14 @@ namespace Coypu.Drivers.Selenium
 
         public void AcceptModalDialog(Scope scope)
         {
-            _elementFinder.SeleniumScopeWithoutEnsuringDefaultContent(scope);
+            _elementFinder.SeleniumScope(scope, false);
             _dialogs.AcceptModalDialog();
-            _elementFinder.SeleniumScope(scope);
         }
 
         public void CancelModalDialog(Scope scope)
         {
-            _elementFinder.SeleniumScopeWithoutEnsuringDefaultContent(scope);
+            _elementFinder.SeleniumScope(scope, false);
             _dialogs.CancelModalDialog();
-            _elementFinder.SeleniumScope(scope);
         }
 
         public void Check(Element field)

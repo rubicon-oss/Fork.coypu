@@ -55,14 +55,14 @@ namespace Coypu.Drivers.Selenium
             return frame;
         }
 
-        public void SwitchToWindow(string windowName)
+        public void SwitchToWindow(string windowName, bool ensureDefaultContent = true)
         {
             if (LastKnownWindowHandle != windowName || SwitchedToAFrame)
             {
                 _webDriver.SwitchTo().Window(windowName);
 
                 // Fix for https://bugzilla.mozilla.org/show_bug.cgi?id=1305822
-                if (_webDriver is FirefoxDriver)
+                if (_webDriver is FirefoxDriver && ensureDefaultContent)
                 {
                     _webDriver.SwitchTo().DefaultContent();
                 }
@@ -70,20 +70,11 @@ namespace Coypu.Drivers.Selenium
                 LastKnownWindowHandle = windowName;
             }
 
-            _switchedToFrame = null;
-            _switchedToFrameElement = null;
-        }
-
-        public void SwitchToWindowWithoutEnsuringDefaultContent(string windowName)
-        {
-            if (LastKnownWindowHandle != windowName || SwitchedToAFrame)
+            if (ensureDefaultContent)
             {
-                _webDriver.SwitchTo().Window(windowName);
-                LastKnownWindowHandle = windowName;
+                _switchedToFrame = null;
+                _switchedToFrameElement = null;
             }
-
-            _switchedToFrame = null;
-            _switchedToFrameElement = null;
         }
     }
 }

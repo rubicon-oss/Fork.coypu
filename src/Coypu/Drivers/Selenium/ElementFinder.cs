@@ -24,17 +24,11 @@ namespace Coypu.Drivers.Selenium
             }
         }
 
-        public ISearchContext SeleniumScope(Scope scope)
-        {
-            return (ISearchContext) scope.Now()
-                                         .Native;
-        }
-
-        public ISearchContext SeleniumScopeWithoutEnsuringDefaultContent(Scope scope)
+        public ISearchContext SeleniumScope(Scope scope, bool ensureDefaultContent = true)
         {
             var element = scope.Now();
 
-            if (element is SeleniumWindow windowElement)
+            if (!ensureDefaultContent && element is SeleniumWindow windowElement)
             {
                 return (ISearchContext) windowElement.NativeWindowWithoutEnsuringDefaultContent();
             }
