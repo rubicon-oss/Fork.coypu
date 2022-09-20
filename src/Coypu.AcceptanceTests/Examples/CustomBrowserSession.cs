@@ -15,7 +15,7 @@ namespace Coypu.AcceptanceTests.Examples
     {
         [TestCase("OS X 10.11", "safari", "11")]
         [TestCase("Windows 10", "edge", "17")]
-        [TestCase("Windows 7", "chrome", "69")]
+        [TestCase("Windows 7", "chrome", "75")]
         public void CustomBrowserWithCustomRemoteDriver(string platformName,
                                                         string browserName,
                                                         string browserVersion)
