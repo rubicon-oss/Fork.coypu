@@ -304,7 +304,11 @@ namespace Coypu.Drivers.Selenium
         {
             try
             {
-                _seleniumWindowManager.SwitchToWindow(_webDriver.WindowHandles[0]);
+                var windowHandles = _webDriver.WindowHandles;
+                if (windowHandles.Count == 0)
+                    return;
+
+                _seleniumWindowManager.SwitchToWindow(windowHandles[0]);
                 if (_dialogs.HasAnyDialog())
                     _webDriver.SwitchTo()
                               .Alert()
