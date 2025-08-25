@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ProjectGuid>{14FB5A97-D3A7-4759-BB6A-03CAFC9B8FAB}</ProjectGuid>
-    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <BuildPackage>true</BuildPackage>
     <AssemblyTitle>Coypu.NUnit</AssemblyTitle>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
-    <FileVersion>3.1.0.0</FileVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+    <FileVersion>3.5.0.0</FileVersion>
     <PackageId>Coypu.NUnit</PackageId>
-    <Version>3.1.0-rc</Version>
+    <Version>3.5.0.0</Version>
     <Description>NUnit matchers for Coypu.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/featurist/coypu/</PackageProjectUrl>
