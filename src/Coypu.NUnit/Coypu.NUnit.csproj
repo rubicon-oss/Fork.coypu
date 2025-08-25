@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ProjectGuid>{14FB5A97-D3A7-4759-BB6A-03CAFC9B8FAB}</ProjectGuid>
-    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <BuildPackage>true</BuildPackage>
     <AssemblyTitle>Coypu.NUnit</AssemblyTitle>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
